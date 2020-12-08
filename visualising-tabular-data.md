@@ -1,5 +1,7 @@
 ## matplotlib heatmap
 
+![matplotlib heatmap](http://https://newcastlerse-training.github.io/carpentries-programming-with-python/inflammation-01-average.svg)
+
 Plot Scaling
 
 Why do all of our plots stop just short of the upper end of our graph?
