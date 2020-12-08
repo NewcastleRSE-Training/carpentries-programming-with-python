@@ -1,6 +1,6 @@
 ## matplotlib heatmap
 
-![matplotlib heatmap](http://https://newcastlerse-training.github.io/carpentries-programming-with-python/inflammation-01-average.svg)
+![matplotlib heatmap](inflammation-01-average.svg)
 
 Plot Scaling
 
