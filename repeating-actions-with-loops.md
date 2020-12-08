@@ -21,10 +21,10 @@ Using range, write a loop that uses range to print the first 3 natural numbers:
 <summary>Solution
 </summary>
 
-```
+<pre>
 for number in range(1, 4):
     print(number)
-```
+</pre>
 
 </details>
 
@@ -32,11 +32,11 @@ for number in range(1, 4):
 
 Given the following loop:
 
-```
+<pre>
 word = 'oxygen'
 for char in word:
     print(char)
-```
+</pre>
 
 How many times is the body of the loop executed?
 
@@ -59,9 +59,8 @@ The body of the loop is executed 6 times.
 
 Exponentiation is built into Python:
 
-```
+
 print(% ** 3)
-```
 
 Output 125
 
