@@ -36,12 +36,10 @@ Because matplotlib normally sets x and y axes limits to the min and max of our d
 <summary>Solution
 </summary>
 
-###### One method
+#One method
 `
 axes3.set_ylabel('min')
-
 axes3.plot(numpy.min(data, axis=0))
-
 axes3.set_ylim(0,6)
 `
 
@@ -51,14 +49,11 @@ axes3.set_ylim(0,6)
 <summary>Solution
 </summary>
 
-###### A more automated approach
+#A more automated approach
 `
 min_data = numpy.min(data, axis=0)
-
 axes3.set_ylabel('min')
-
 axes3.plot(min_data)
-
 axes3.set_ylim(numpy.min(min_data), numpy.max(min_data) * 1.1)
 `
 
