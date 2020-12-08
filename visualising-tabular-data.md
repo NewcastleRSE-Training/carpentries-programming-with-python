@@ -39,12 +39,12 @@ Because matplotlib normally sets x and y axes limits to the min and max of our d
 <summary>Solution
 </summary>
 
-```
+<pre>
 # One method
 axes3.set_ylabel('min')
 axes3.plot(numpy.min(data, axis=0))
 axes3.set_ylim(0,6)
-```
+</pre>
 
 </details>
 
@@ -52,13 +52,13 @@ axes3.set_ylim(0,6)
 <summary>Solution
 </summary>
 
-```
+<pre>
 # A more automated approach
 min_data = numpy.min(data, axis=0)
 axes3.set_ylabel('min')
 axes3.plot(min_data)
 axes3.set_ylim(numpy.min(min_data), numpy.max(min_data) * 1.1)
-```
+</pre>
 
 </details>
 
@@ -72,7 +72,7 @@ In the center and right subplots above, we expect all lines to look like step fu
 
 Because matplotlib interpolates (draws a straight line) between the points. One way to do avoid this is to use the Matplotlib *drawstyle* option:
 
-```
+<pre>
 import numpy
 import matplotlib.pyplot
 
@@ -96,7 +96,8 @@ axes3.plot(numpy.min(data, axis=0), drawstyle='steps-mid')
 fig.tight_layout()
 
 matplotlib.pyplot.show()
-```
+</pre>
+
 </details>
 
 ### Make Your Own Plot
@@ -108,10 +109,11 @@ Create a plot showing the standard deviation (numpy.std) of the inflammation dat
 </summary>
 
 
-```
+<pre>
 std_plot = matplotlib.pyplot.plot(numpy.std(data, axis=0))
 matplotlib.pyplot.show()
-```
+</pre>
+
 </details>
 
 ### Moving Plots Around
@@ -123,7 +125,7 @@ Modify the program to display the three plots on top of one another instead of s
 <summary>Solution
 </summary>
 
-```
+<pre>
 import numpy
 import matplotlib.pyplot
 
@@ -149,5 +151,6 @@ axes3.plot(numpy.min(data, axis=0))
 fig.tight_layout()
 
 matplotlib.pyplot.show()
-```
+</pre>
+
 </details>
