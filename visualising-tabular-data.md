@@ -20,7 +20,7 @@
 
 ## Exercises
 
-#### Plot Scaling
+### Plot Scaling
 
 Why do all of our plots stop just short of the upper end of our graph?
 
@@ -30,7 +30,7 @@ Why do all of our plots stop just short of the upper end of our graph?
 Because matplotlib normally sets x and y axes limits to the min and max of our data (depending on data range).
 </details>
 
-#### Update your plotting code to automatically set a more appropriate scale. (Hint: you can make use of the max and min methods to help.)
+### Update your plotting code to automatically set a more appropriate scale. (Hint: you can make use of the max and min methods to help.)
 
 <details>
 <summary>Solution
@@ -59,7 +59,7 @@ axes3.set_ylim(numpy.min(min_data), numpy.max(min_data) * 1.1)
 
 </details>
 
-#### Drawing Straight Lines
+### Drawing Straight Lines
 
 In the center and right subplots above, we expect all lines to look like step functions because non-integer value are not realistic for the minimum and maximum values. However, you can see that the lines are not always vertical or horizontal, and in particular the step function in the subplot on the right looks slanted. Why is this?
 
@@ -96,10 +96,49 @@ matplotlib.pyplot.show()
 ```
 </details>
 
-#### Make Your Own Plot
+### Make Your Own Plot
 
 Create a plot showing the standard deviation (numpy.std) of the inflammation data for each day across all patients.
 
-#### Moving Plots Around
+<details>
+<summary>Solution
+</summary>
+
+
+```
+std_plot = matplotlib.pyplot.plot(numpy.std(data, axis=0))
+matplotlib.pyplot.show()
+```
+</details>
+
+### Moving Plots Around
 
 Modify the program to display the three plots on top of one another instead of side by side.
+
+```
+import numpy
+import matplotlib.pyplot
+
+data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+
+# change figsize (swap width and height)
+fig = matplotlib.pyplot.figure(figsize=(3.0, 10.0))
+
+# change add_subplot (swap first two parameters)
+axes1 = fig.add_subplot(3, 1, 1)
+axes2 = fig.add_subplot(3, 1, 2)
+axes3 = fig.add_subplot(3, 1, 3)
+
+axes1.set_ylabel('average')
+axes1.plot(numpy.mean(data, axis=0))
+
+axes2.set_ylabel('max')
+axes2.plot(numpy.max(data, axis=0))
+
+axes3.set_ylabel('min')
+axes3.plot(numpy.min(data, axis=0))
+
+fig.tight_layout()
+
+matplotlib.pyplot.show()
+```
