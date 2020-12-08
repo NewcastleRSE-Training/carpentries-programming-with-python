@@ -1,23 +1,23 @@
 
 ## Visualizing data
 
-## matplotlib heatmap
+### matplotlib heatmap
 
 ![matplotlib heatmap](img/inflammation-01-imshow.svg)
 
-## average inflammation
+### average inflammation
 
 ![average inflammation](img/inflammation-01-average.svg)
 
-##  group plot
+###  group plot
 
 ![group plot](img/inflammation-01-group-plot.svg)
 
-## maximum
+### maximum
 
 ![maximum](img/inflammation-01-maximum.svg)
 
-## minimum
+### minimum
 
 ![minimum](img/inflammation-01-minimum.svg)
 
