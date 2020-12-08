@@ -1,3 +1,6 @@
+
+## Visualizing data
+
 ## matplotlib heatmap
 
 ![matplotlib heatmap](img/inflammation-01-imshow.svg)
