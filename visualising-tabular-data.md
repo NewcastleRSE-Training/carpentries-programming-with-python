@@ -115,6 +115,11 @@ matplotlib.pyplot.show()
 
 Modify the program to display the three plots on top of one another instead of side by side.
 
+
+<details>
+<summary>Solution
+</summary>
+
 ```
 import numpy
 import matplotlib.pyplot
@@ -142,3 +147,4 @@ fig.tight_layout()
 
 matplotlib.pyplot.show()
 ```
+</details>
