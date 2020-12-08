@@ -72,12 +72,12 @@ Write a loop that calculates the same result as 5 ** 3 using multiplication (and
 <summary>Solution
 </summary>
 
-```
+<pre>
 result = 1
 for number in range(0, 3):
     result = result * 5
 print(result)
-```
+</pre>
 
 </details>
 
