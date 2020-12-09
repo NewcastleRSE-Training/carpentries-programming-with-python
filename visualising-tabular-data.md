@@ -9,10 +9,6 @@
 
 ![average inflammation](img/inflammation-01-average.svg)
 
-###  group plot
-
-![group plot](img/inflammation-01-group-plot.svg)
-
 ### maximum
 
 ![maximum](img/inflammation-01-maximum.svg)
@@ -20,6 +16,10 @@
 ### minimum
 
 ![minimum](img/inflammation-01-minimum.svg)
+
+###  group plot
+
+![group plot](img/inflammation-01-group-plot.svg)
 
 ## Exercises
 
