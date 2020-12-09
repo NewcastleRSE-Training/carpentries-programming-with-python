@@ -2,6 +2,6 @@
 
 Contains images and exercises
 
-[Visualising tabular data](https://newcastlerse-training.github.io/carpentries-programming-with-python/visualising-data)
+[Visualising tabular data](https://newcastlerse-training.github.io/carpentries-programming-with-python/visualising-tabular-data)
 
 [Repeating actions with loops](https://newcastlerse-training.github.io/carpentries-programming-with-python/repeating-actions-with-loops)
